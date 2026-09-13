@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Calendar, Phone, Compass, ChevronLeft, ChevronRight, HeartPulse, Wind, Sparkles } from 'lucide-react';
+import doctorAvatar from '../assets/images/doctor_avatar_1783034650660.jpg';
 
 interface HeroSectionProps {
   onBookAppointment: () => void;
@@ -35,7 +36,7 @@ export default function HeroSection({ onBookAppointment, onExploreServices }: He
       title: "Healthy Lungs with",
       highlight: "Expert Pulmonology Care.",
       description: "Experience world-class chest, respiratory, and advanced interventional sleep diagnostics led by Dr. M. Sai Sashank, utilizing cutting-edge non-invasive technologies.",
-      image: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=800", // High quality modern doctor/clinical environment
+      image: doctorAvatar,
       colorTheme: "from-sky-500/10 via-transparent to-sky-500/5",
       bgGradient: "rgba(203, 213, 225, 0.95), rgba(186, 230, 253, 0.93)", // Sky Slate / light blue theme
       bannerBgImage: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=1200",
