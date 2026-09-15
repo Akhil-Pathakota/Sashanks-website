@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Calendar, Phone, Compass, ChevronLeft, ChevronRight, HeartPulse, Wind, Sparkles } from 'lucide-react';
-import doctorAvatar from '../assets/images/doctor_avatar_1783034650660.jpg';
+import doctorAvatar from '../assets/images/operation.jpg';
+import lungs from '../assets/images/lungs.jpg';
 
 interface HeroSectionProps {
   onBookAppointment: () => void;
@@ -50,7 +51,7 @@ export default function HeroSection({ onBookAppointment, onExploreServices }: He
       title: "Breathe Free from",
       highlight: "Chronic Asthma & Allergies.",
       description: "Get comprehensive clinical screening, pulmonary function testing (PFT), and advanced personalized therapies to control wheezing, persistent cough, and chest tightness.",
-      image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800", // Beautiful healthy person taking deep breath in clean air
+      image: lungs,
       colorTheme: "from-emerald-500/10 via-transparent to-emerald-500/5",
       bgGradient: "rgba(203, 213, 225, 0.95), rgba(167, 243, 208, 0.93)", // Emerald Slate / light mint theme
       bannerBgImage: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=1200",

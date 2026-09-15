@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { GraduationCap, Briefcase, Stethoscope, Mail, Phone, Calendar, ArrowRight, Award, ShieldCheck, Heart, Sparkles } from 'lucide-react';
 import { DOCTOR_INFO, QUALIFICATIONS, EXPERIENCES, INTERVENTIONAL_SKILLS } from '../data';
-import doctorAvatar from '../assets/images/doctor_avatar_1783034650660.jpg';
+import unnamed from '../assets/images/unnamed.webp';
 
 export default function DoctorProfile() {
   const [activeTab, setActiveTab] = useState<'qualifications' | 'experience' | 'expertise'>('qualifications');
@@ -148,7 +148,7 @@ export default function DoctorProfile() {
               {/* Doctor Portrait Image */}
               <div className="mt-8 relative rounded-2xl overflow-hidden aspect-[4/5] border border-white/20 shadow-lg group/photo bg-brand-700/50">
                 <img 
-                  src={doctorAvatar} 
+                  src={unnamed} 
                   alt={DOCTOR_INFO.fullName}
                   className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover/photo:scale-105"
                   referrerPolicy="no-referrer"
