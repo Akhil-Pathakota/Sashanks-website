@@ -1,3 +1,4 @@
+import doctorAvatar from './assets/images/doctor_avatar_1783034650660.jpg';
 import { Qualification, Experience, AcademicPresentation, Publication, InterventionalSkill, FAQ } from './types';
 
 export const DOCTOR_INFO = {
